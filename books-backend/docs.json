@@ -1,0 +1,46 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"title": "Todo Backend Docs",
+		"version": "1.0.0",
+		"port": 8080
+	},
+	"paths": {
+		"/": {
+			"get": {
+				"description": "No inputs required",
+				"responses": {
+					"200": {
+						"description": "Returns an object of books."
+					}
+				}
+			},
+			"post": {
+				"description": "Book details required in the body of the request e.g., {'title': 'Machine Learning', 'author': 'Tom Mitchell', 'year': 1999}",
+				"responses": {
+					"201": {
+						"description": "Returns a blank object."
+					}
+				}
+			},
+			"delete": {
+				"description": "ID required in the body of the request e.g., {'book_id': 1}",
+				"responses": {
+					"204": {
+						"description": "Returns a blank object."
+					}
+				}
+			},
+			"put": {
+				"description": "Book details required in the body of the request e.g., {'book_id': 1, 'title': 'Machine Learning', 'author': 'Tom Mitchell', 'year': 1999}",
+				"responses": {
+					"204": {
+						"description": "Returns a blank object."
+					}
+				}
+			}
+		}
+	},
+	"components": {},
+	"tags": []
+}
